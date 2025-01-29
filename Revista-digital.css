@@ -42,7 +42,7 @@ header #box-header-buttons button{
 header .fa-paper-plane{
     margin-right: 0.5vw;
 }
-.btn-enviar, .btn-user {
+.btn-enviar, .btn-enviar2, .btn-user {
     background: #275CAA;
     border: none;
     color: white;
@@ -51,8 +51,14 @@ header .fa-paper-plane{
     padding: 10px 15px;
     border-radius: 6px;
 }
+.btn-enviar2{
+    display: none;
+}
 .btn-enviar:hover, .btn-user:hover {
     background: #03BFD7;
+}
+.logo img{
+    width: 250px;
 }
 .faixa{
     background: #275CAA;
@@ -67,10 +73,6 @@ header .fa-paper-plane{
     font-family: 'gotham-black';
     font-size: 24px;
 }
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-}
 .intro{
     display: flex;
     margin-top: 40px;
@@ -80,6 +82,7 @@ header .fa-paper-plane{
     padding: 20px;
     background-color: white;
     justify-content: space-between;
+    align-items: center;
 }
 .intro h1 {
     font-family: 'gotham-black';
@@ -89,9 +92,11 @@ header .fa-paper-plane{
     font-family: 'gotham-medium';
     color: #001442;
 }
-.intro img {
+.intro .box-img img {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 .intro .box-intro-txt{
     width: 30vw;
@@ -121,7 +126,6 @@ header .fa-paper-plane{
    font-size: 20px;
    margin-bottom: 0;
 }
-
 .edicao-completa #card i{
     color: #03BFD7 ;
     font-size: 80px;
@@ -209,4 +213,104 @@ input:focus{
 }
 .btn-pdf:hover{
     background: linear-gradient(90deg, #0A4E94, #0A4E94,#03BFD7);
+}
+@media (max-width: 1533px){
+    .intro .box-img img {
+        width: 300%;
+        height: 100%;
+    }
+    .intro .box-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width:1187px){
+    #box-txt-edicao-completa h2{
+        margin-top: 0px;
+    }
+}
+@media (max-width:1024px){
+    .logo img{
+        width: 200px;
+    }
+    header{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    header .fa-paper-plane{
+        margin-right: 0vw;
+    }
+    .btn-enviar2{
+        display:initial;
+    }
+    .btn-enviar{
+        display:none;
+    }
+    .intro{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding: 0;
+    }
+    .intro h1{
+        font-size: 30px;
+    }
+    .intro .box-intro-txt{
+        width: 100%;
+    }
+    .intro .box-img{
+        order: -1;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .edicao-completa #box-txt-edicao-completa{
+        order: -1;
+    }
+    .edicao-completa{
+        flex-direction: column;
+        align-items: center;
+    }
+    .edicao-completa #card i{
+        font-size: 40px;
+        margin-right: 20px;
+    }
+    .edicao-completa #card p{
+        font-size: 14px;
+    }
+    .edicao-completa #card{
+        margin: 0;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        padding: 20px 0px 30px 40px;
+        flex-direction: row;
+        align-items: center;
+    }
+    .edicao-completa #box-txt-edicao-completa{
+        text-align: center;
+        width: 80%;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 20px;
+    }
+    .edicao-completa #box-txt-edicao-completa h2{
+        font-size: 34px;
+    }
+    .search{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        height: 30px;
+    }
+    .artigos{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+@media (max-width:397px){
+    .logo img{
+        width: 150px;
+    }
 }
