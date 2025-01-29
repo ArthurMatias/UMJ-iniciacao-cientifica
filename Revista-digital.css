@@ -1,0 +1,212 @@
+@font-face {
+    src: url('./fonts/Gotham-Black.otf');
+    font-family: 'gotham-black';    
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('./fonts/Gotham-Medium.otf');
+    font-family: 'gotham-medium';    
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('./fonts/Gotham-ex-light.otf');
+    font-family: 'gotham-ex-light';    
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: #ffffff;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: white;
+    padding: 15px 20px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+header #box-header-buttons button{
+    margin-left: 3vw;
+    font-family: 'gotham-medium';
+}
+header .fa-paper-plane{
+    margin-right: 0.5vw;
+}
+.btn-enviar, .btn-user {
+    background: #275CAA;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+.btn-enviar:hover, .btn-user:hover {
+    background: #03BFD7;
+}
+.faixa{
+    background: #275CAA;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faixa #txt-revista-digital h1{
+    color: #ffffff;
+    margin: 0;
+    font-family: 'gotham-black';
+    font-size: 24px;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+.intro{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 20px;
+    background-color: white;
+    justify-content: space-between;
+}
+.intro h1 {
+    font-family: 'gotham-black';
+    color: #0A4E94;
+}
+.intro p {
+    font-family: 'gotham-medium';
+    color: #001442;
+}
+.intro img {
+    width: 100%;
+    height: 100%;
+}
+.intro .box-intro-txt{
+    width: 30vw;
+}
+.intro .box-img{
+    width: 50%;
+    border-radius: 14px;
+    overflow: hidden;
+} 
+.edicao-completa {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #275CAA, #1CBED7);
+    padding: 40px 0px;
+}
+.edicao-completa #card{
+    width: 40vw;
+    height: 180px;
+    border-radius: 14px;
+    background-color: #ffffff;
+    padding: 20px 40px 0px;
+    margin-left: 15vw;
+}
+.edicao-completa #card p{
+   font-family: 'gotham-medium';
+   color: #03BFD7 ;
+   font-size: 20px;
+   margin-bottom: 0;
+}
+
+.edicao-completa #card i{
+    color: #03BFD7 ;
+    font-size: 80px;
+ }
+.edicao-completa #box-txt-edicao-completa{
+    width: 40vw;
+    margin-right: 15vw;
+    margin-left: 4vw;
+}
+.edicao-completa #box-txt-edicao-completa h2{
+    font-family: 'gotham-black';
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.edicao-completa #box-txt-edicao-completa p{
+    font-family: 'gotham-medium';
+    color: #ffffff;
+    font-size: 16px;
+}
+.search{
+    margin-top: 40px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #ABB9BF;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+.search i{
+    color: #ABB9BF;
+}
+.search input{
+    background-color: transparent;
+    border: none;
+    color: #001442;
+    width: 100%;
+    font-size: 16px;
+}
+input:focus{
+    outline: none;
+}
+.artigos {
+    width: 100;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 60px;
+}
+.artigos h2{
+    font-family: 'gotham-ex-light';
+    color: #001442;
+}
+.artigos h3{
+    font-family: 'gotham-black';
+    color: #0A4E94;
+    margin: 0;
+}
+.artigos p{
+    font-family: 'gotham-ex-light';
+    color: #001442;
+    margin: 10px 0px 0px 0px;
+}
+.artigo {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0px 0px 40px 0px;
+    border-radius: 6px;
+    border: 1px solid #ABB9BF;
+}
+.btn-pdf {
+    background: linear-gradient(90deg, #0A4E94, #03BFD7);
+    font-family: 'gotham-medium';
+    font-size: 16px;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-pdf:hover{
+    background: linear-gradient(90deg, #0A4E94, #0A4E94,#03BFD7);
+}
