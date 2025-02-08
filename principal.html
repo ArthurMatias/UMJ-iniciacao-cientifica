@@ -7,52 +7,55 @@
     <link rel="stylesheet" href="principal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7fae2cf3e8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="topo">
-        <div class="logo">UMJ</div>
-        <nav>
-            <button class="botao-enviar">✈ Enviar artigo</button>
-            <img src="user-icon.png" alt="Ícone de usuário" class="user-icon">
-        </nav>
+    <header>
+        <div class="logo"><img src="./imgs/logo-umj.svg" alt="logo-UMJ"></div>
+        <div id="box-header-buttons">
+            <button class="btn-enviar"><i class="fa-regular fa-paper-plane"></i>Enviar Artigo</button>
+            <button class="btn-enviar2"><i class="fa-regular fa-paper-plane"></i></button>
+            <button class="btn-user"><i class="fa-regular fa-user"></i></button>
+        </div>
     </header>
 
     <section class="hero">
         <div class="overlay">
-            <h1>Confira nossa <br> <strong>Revista Digital!</strong></h1>
-            <button class="cta">→ Clique aqui</button>
+            <h1>Confira nossa<br> Revista Digital!</h1>
+            <button class="cta"><i class="fa-solid fa-arrow-right"></i>Clique aqui</button>
         </div>
+        <img src="./imgs/aluna-umj.svg" alt="aluna-UMJ">
     </section>
 
     <section class="sobre">
-        <img src="umj-campus.jpg" alt="Entrada da UMJ">
+        <div class="imagem-umj"><img src="./imgs/frente-umj.svg" alt="Entrada da UMJ"></div>
         <div class="texto">
-            <h2>Sobre a Revista</h2>
-            <p>A revista digital acadêmica pertence ao Centro Universitário Mário Pontes Jucá - UMJ, credenciado pelo MEC. A Universidade está localizada na Avenida Muniz Falcão, 1200 - Barro Duro, Maceió - AL.</p>
-            <p>O objetivo principal desta revista é fomentar o debate de diferentes áreas em prol do construto do conhecimento por meio da publicação de artigos científicos ampliando os conhecimentos acadêmicos.</p>
+            <h1>Sobre a Revista</h1>
+            <p>A revista digital acadêmica pertence ao Centro Universitário Mario Pontes Jucá - UMJ,(credenciada pelo MEC). A Universidade está localizada na Avenida Muniz Falcão, 1200 - Barro Duro, Maceió - AL.<br><br>
+                O objetivo principal desta revista é fomentar o debate de diferentes áreas em prol do constructo do conhecimento por meio da publicação de artigos científicos ampliando os conhecimentos acadêmicos.</p>
         </div>
     </section>
 
     <section class="envio">
-        <div class="box">
-            <h2>Deseja enviar seu artigo?</h2>
+        <div class="box-txt2">
+            <h1>Deseja enviar seu artigo?</h1>
             <p>Confira o edital anexo e fique por dentro!</p>
-            <a href="#">📄 UMJ - Edital Revista Digital 2024</a>
+        </div>
+        <div class="box">
+            <a href="#"><i class="fa-regular fa-file"></i>UMJ - Edital<br>Revista Digital 2024</a>
         </div>
     </section>
 
     <section class="edicoes">
-        <h2>Acesse todas as edições da Revista</h2>
-        <p>Confira o artigo anexo e fique por dentro!</p>
-        <div class="grid-edicoes">
-            <img src="2024.jpg" alt="Revista 2024">
-            <img src="2024.jpg" alt="Revista 2024">
-            <img src="2024.jpg" alt="Revista 2024">
+        <div class="box-edicoes">
+            <img src="./imgs/arte-generica.svg" alt="Revista 2024">
+            <img src="./imgs/arte-generica.svg" alt="Revista 2024">
+            <img src="./imgs/arte-generica.svg" alt="Revista 2024">
+        </div>
+        <div class="box-txt">
+            <h1>Acesse todas as<br>edições da Revista</h1>
+            <p>Confira o artigo anexo e fique por dentro!</p>
         </div>
     </section>
-
-    <footer>
-        <p>&copy; 2024 UMJ - Centro Universitário Mário Pontes Jucá</p>
-    </footer>
 </body>
 </html>
