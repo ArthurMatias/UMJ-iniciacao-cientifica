@@ -58,7 +58,7 @@ header .fa-paper-plane{
 .btn-enviar2{
     display: none;
 }
-.btn-enviar:hover, .btn-user:hover {
+.btn-enviar:hover,.btn-enviar2:hover, .btn-user:hover {
     background: #03BFD7;
 }
 .logo img{
