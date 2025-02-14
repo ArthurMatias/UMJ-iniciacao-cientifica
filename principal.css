@@ -112,15 +112,16 @@ p{
 }
 .imagem-umj{
     overflow: hidden;
-    width: 30vw;
-    height: 38vh;
-    border-radius: 10px;
+    width: 600px;
+    height: 360px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .imagem-umj img{
     width: 100%;
+    border-radius: 10px;
 }
 .sobre {
     display: flex;
@@ -165,10 +166,12 @@ p{
     font-size: 18px;
 }
 .box-txt2{
+    width: 30%;
     display: flex;
     flex-direction: column;
     text-align: start;
     margin-left: 15vw;
+    gap: 20px;
 }
 .box-txt2 h1{
     font-size: 36px;
@@ -184,6 +187,7 @@ p{
 }
 .box{
     width: 30vw; 
+    margin-right: 15vw;
 }
 .edicoes {
     display: flex;
@@ -215,4 +219,183 @@ p{
 .edicoes p{
     font-size: 16px;
     color: #001442;
+}
+@media (min-width: 2000px){
+    header{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .hero img{
+        margin-right: 25vw;
+    }
+    .hero .overlay {
+        margin-left: 25vw;
+    }
+    .sobre {
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+    .box-txt2{
+        margin-left: 25vw;
+    }
+    .box{
+        margin-right: 25vw;
+    }
+    .edicoes {
+       
+        margin-left: 25vw;
+        margin-right: 25vw;
+        gap: 200px;
+    }
+}
+@media (max-width:1354px){
+    .hero .overlay h1 {
+        font-size: 40px;
+    }
+    .hero img{
+        width: 35%;
+    }
+}
+@media (max-width:1024px){
+    .logo img{
+        width: 200px;
+    }
+    header .fa-paper-plane{
+        margin-right: 0vw;
+    }
+    .btn-enviar2{
+        display:initial;
+    }
+    .btn-enviar{
+        display:none;
+    }
+    .sobre {
+        flex-direction: column;
+    }
+    .sobre .texto {
+        text-align: center;
+        width: 100%;
+    }
+}
+@media (max-width:884px){
+    .hero{
+        height: 100vh;
+    }
+    .hero .overlay{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .hero .overlay h1{
+        font-size: 26px;
+        text-align: center;
+        margin: 40px;
+    }
+    .hero img{
+        display: none;
+    }
+    .imagem-umj{
+        width: 360px;
+        height: 220px;
+    }
+    .imagem-umj img{
+        width: 100%;
+        border-radius: 6px;
+    }
+    .sobre {
+        margin: 0;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .sobre .texto h1{
+        font-size: 26px;
+        width: 100%;
+    }
+    .sobre .texto p{
+        font-size: 14px;
+        width: 100%;
+    }
+    header #box-header-buttons{
+        margin-right: 10vw;
+    }
+    .envio{
+        flex-direction: column;
+        margin: 0;
+        gap: 30px;
+    }
+    .envio .box{
+        width: 90%;
+        padding: 20px 30px 20px 30px;
+        margin: 0;
+    }
+    .envio .box a{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        font-size: 14px;
+    }
+    .envio .box i{
+        font-size: 40px;
+        margin: 0;
+    }
+    .envio .box-txt2{
+        text-align: center;
+        margin: 0;
+        width: 90%;
+        gap: 10px;
+    }
+    .envio .box-txt2 h1{
+        font-size: 26px;
+    }
+    .envio .box-txt2 p{
+        font-size: 14px;
+    }
+    .edicoes{
+        gap: 30px;
+        margin: 0vw 10vw 0vw 10vw;
+        flex-direction: column;
+    }
+    .edicoes .box-edicoes {
+        margin: 0px 0px 50px 0px;
+    }
+    .edicoes .box-txt {
+        text-align: center;
+        order: -1;
+    }
+    .edicoes .box-txt br {
+        display: none;
+    }
+    .edicoes .box-txt h1{
+        font-size: 26px;
+    }
+    .edicoes .box-txt p{
+        font-size: 14px;
+    }
+}
+@media (max-width:500px){
+    .logo img{
+        width: 150px;
+        margin-left: 0;
+    }
+    header #box-header-buttons{
+        margin-right: 0;
+    }
+}
+@media (max-width:380px){
+    .imagem-umj{
+        width: 300px;
+        height: 180px;
+    }
+    .imagem-umj img{
+        width: 100%;
+        border-radius: 4px;
+    }  
+    .sobre {
+        margin: 0;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 }
