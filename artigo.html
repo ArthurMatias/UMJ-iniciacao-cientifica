@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Integrantes</title>
+    <link rel="stylesheet" href="artigo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="./imgs/logo-umj.svg" alt="logo-UMJ" /></div>
+      <div id="box-header-buttons">
+        <button class="btn-enviar">
+          <i class="fa-regular fa-paper-plane"></i>Enviar Artigo
+        </button>
+        <button class="btn-enviar2">
+          <i class="fa-regular fa-paper-plane"></i>
+        </button>
+        <button class="btn-user"><i class="fa-regular fa-user"></i></button>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="documentos">
+          <h2><i class="fa-regular fa-file"></i> Documentos</h2>
+          <div class="botoes-documentos">
+            <button class="btn-doc">→ Anexe o documento do Artigo</button>
+            <button class="btn-doc">
+              → Anexe o termo de originalidade assinado
+            </button>
+          </div>
+        </section>
+
+        <section class="integrantes">
+          <h2><i class="fa-solid fa-users"></i> Integrantes</h2>
+
+          <form>
+            <section id="integrante">
+              <div class="input-group">
+                <label>Nome:</label>
+                <input
+                  type="text"
+                  placeholder="Digite o nome do primeiro integrante"
+                />
+              </div>
+              <div class="input-group">
+                <label>Email:</label>
+                <input
+                  type="email"
+                  placeholder="Digite o email do primeiro integrante"
+                />
+              </div>
+            </section>
+
+            <div class="input-group">
+              <label>Nome:</label>
+              <input
+                type="text"
+                placeholder="Digite o nome do segundo integrante"
+              />
+            </div>
+            <div class="input-group">
+              <label>Email:</label>
+              <input
+                type="email"
+                placeholder="Digite o email do segundo integrante"
+              />
+            </div>
+
+            <div class="botoes-ajuste">
+              <button type="button" class="btn-menor">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <button type="button" class="btn-menor">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+
+            <button type="submit" class="btn-concluir">✔ Concluir</button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
