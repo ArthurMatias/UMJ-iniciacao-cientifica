@@ -116,7 +116,7 @@ main {
 
 .btn-doc {
   background: none;
-  border: 1px solid #ccc;
+  border: 1px solid #abb9bf;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
@@ -159,7 +159,7 @@ main {
 .input-group input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #abb9bf;
   border-radius: 5px;
   font-size: 14px;
 }
@@ -200,5 +200,5 @@ main {
 }
 
 .btn-concluir:hover {
-  opacity: 0.8;
+  background: linear-gradient(90deg, #275caa, #275caa, #1cbed7);
 }
