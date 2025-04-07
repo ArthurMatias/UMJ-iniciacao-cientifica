@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monitoramento</title>
+    <link rel="stylesheet" href="notification.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <script src="notification.js"></script>
+  <body>
+    <header>
+      <div class="logo"><img src="./imgs/logo-umj.svg" alt="logo-UMJ" /></div>
+      <div id="box-header-buttons">
+        <button class="btn-enviar">
+          <i class="fa-regular fa-paper-plane"></i>Enviar Artigo
+        </button>
+        <button class="btn-enviar2">
+          <i class="fa-regular fa-paper-plane"></i>
+        </button>
+        <button class="btn-user"><i class="fa-regular fa-user"></i></button>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="tabs">
+        <div
+          class="tab active"
+          data-tab="notificacoes"
+          onclick="switchTab('notificacoes')"
+        >
+          🔔 Notificações
+        </div>
+        <div
+          class="tab"
+          data-tab="configuracoes"
+          onclick="switchTab('configuracoes')"
+        >
+          ⚙️ Configurações
+        </div>
+      </div>
+
+      <div class="content">
+        <div id="notificacoes" class="tab-content">
+          <div
+            class="notificacao"
+            onclick="openModal('Seu artigo foi aceito', 'Parabéns, seu artigo foi aceito!<br><br>Seu artigo vai estar em nossa Revista Digital 2025 com os créditos exclusivos para você, fique atento às notificações do sistema e em seu email onde vamos informar o lançamento oficial da cada edição.', '31/10/2024', 'green')"
+          >
+            <h4><span class="dot green"></span> Seu artigo foi aceito</h4>
+            <p>
+              Parabéns, seu artigo foi aceito! Vai estar em nossa próxima
+              edição.
+            </p>
+            <span class="data">31/10/2024</span>
+          </div>
+
+          <div
+            class="notificacao"
+            onclick="openModal('Seu artigo foi negado', 'Infelizmente, seu artigo não foi aceito. Recomendamos revisar os critérios da revista para futuras submissões.', '26/10/2024', 'red')"
+          >
+            <h4><span class="dot red"></span> Seu artigo foi negado</h4>
+            <p>Não foi dessa vez que seu artigo foi aceito, mas não desista!</p>
+            <span class="data">26/10/2024</span>
+          </div>
+
+          <div
+            class="notificacao"
+            onclick="openModal('Correção no artigo', 'Seu artigo precisa de correções ou modificações antes de ser aceito. Acesse o sistema para editar o conteúdo conforme orientações.', '11/11/2024', 'yellow')"
+          >
+            <h4><span class="dot yellow"></span> Correção no artigo</h4>
+            <p>
+              Seu artigo deve ser corrigido ou modificado antes de nova
+              avaliação.
+            </p>
+            <span class="data">11/11/2024</span>
+          </div>
+
+          <button class="btn-retorno">⟳ Retorno</button>
+        </div>
+
+        <div id="configuracoes" class="tab-content" style="display: none">
+          <div class="config-item">
+            <strong>Modificar nome</strong>
+            <span>José Rivaldo da Silva Gomes Neto</span>
+          </div>
+          <div class="config-item">
+            <strong>Modificar email</strong>
+            <span>emaildapessoa aqui000@gmail.com</span>
+          </div>
+          <div class="config-item">
+            <strong>Modificar senha</strong>
+            <span>*********</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="modal-overlay" class="modal-overlay">
+      <div class="modal">
+        <button class="close-modal" onclick="closeModal()">&times;</button>
+        <h4 id="modal-title"></h4>
+        <p id="modal-message"></p>
+        <div class="data" id="modal-date"></div>
+      </div>
+    </div>
+  </body>
+</html>

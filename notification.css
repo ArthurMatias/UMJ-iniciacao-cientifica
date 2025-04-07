@@ -1,0 +1,261 @@
+@font-face {
+  src: url("./fonts/Gotham-Black.otf");
+  font-family: "gotham-black";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("./fonts/Gotham-Medium.otf");
+  font-family: "gotham-medium";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("./fonts/Gotham-ex-light.otf");
+  font-family: "gotham-ex-light";
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background: #f8f9fa;
+  color: #1f2d3d;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: white;
+  padding: 15px 20px;
+}
+header #box-header-buttons {
+  margin-right: 15vw;
+}
+header #box-header-buttons button {
+  margin-left: 3vw;
+  font-family: "gotham-medium";
+}
+header .fa-paper-plane {
+  margin-right: 0.5vw;
+}
+.btn-enviar,
+.btn-enviar2,
+.btn-user {
+  background: #275caa;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+.btn-enviar2 {
+  display: none;
+}
+.btn-enviar:hover,
+.btn-enviar2:hover,
+.btn-user:hover {
+  background: #03bfd7;
+}
+.logo img {
+  width: 250px;
+  margin-left: 15vw;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 36px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.btn-enviar {
+  background-color: #1e56a0;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 600;
+  background: #f4f6f8;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: white;
+  border-bottom: 3px solid #1e56a0;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.notificacao {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.notificacao h4 {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.notificacao h4 .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.dot.green {
+  background-color: #28a745;
+}
+.dot.red {
+  background-color: #dc3545;
+}
+.dot.yellow {
+  background-color: #ffc107;
+}
+
+.notificacao p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.notificacao .data {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.btn-retorno {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #1e56a0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.config-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.config-item strong {
+  font-weight: 700;
+  color: #0b0c2a;
+}
+
+.config-item span {
+  color: #6c757d;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  display: none;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal h4 {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.modal .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.modal p {
+  margin: 0.5rem 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.modal .data {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #001f3f;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
